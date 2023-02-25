@@ -6,13 +6,22 @@
 //  else
 //  console.log('numero dois maior');
 
-let car = {
-    type: 'Fiat',
-    model: '500',
-    color: 'white',
+// let car = {
+//     type: 'Fiat',
+//     model: '500',
+//     color: 'white',
+//   };
+  
+//   for (let index in car) {
+//     console.log(index, car[index]);
+
+//   }
+
+const sum = (value1, value2) => {
+    if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+      throw new Error('Os valores devem ser numéricos');
+    }
+    return value1 + value2;
   };
   
-  for (let index in car) {
-    console.log(index, car[index]);
-
-  }
+  console.log(sum(2, '3'));
